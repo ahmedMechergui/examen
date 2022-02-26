@@ -1,0 +1,15 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<h1>Ajouter un examen </h1>
+    <form action="/documents" method="post" style="width: fit-content">
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Description</label><br>
+        <textarea name="description" id="description"></textarea> <br>
+        <label for="format">Format</label><br>
+        <input type="text" id="format" name="format"><br>
+        <br>
+        <input type="submit" value="Ajouter" style="float: right">
+    </form>
+{% endblock %}
